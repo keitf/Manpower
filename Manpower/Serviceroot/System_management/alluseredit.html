@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../Theme/Layui/css/layui.css" rel="stylesheet" />
+    <script src="../../Theme/Layui/layui.js"></script>
+    <script src="../../Theme/Scripts/jquery-3.5.1.js"></script>
+    <link href="../../Theme/Pageset/useredit.css" rel="stylesheet" />
+    <link href="../../Theme/Images/user_icon.png" rel="icon" />
+    <title>alluseredit</title>
+</head>
+
+<body>
+    <form action="" method="post" class="layui-form layui-form-pane formstylels" lay-filter="data1">
+        <input type="hidden" name="id" value="" />
+        <div class="layui-form-item">
+            <label class="layui-form-label">账号</label>
+            <div class="layui-input-inline">
+                <input type="text" name="username" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-inline">
+                <input type="text" name="pwd" lay-verify="required|pass" placeholder="请输入" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">重复密码</label>
+            <div class="layui-input-inline">
+                <input type="text" name="repwd" lay-verify="required|pass" placeholder="请输入" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">角色</label>
+            <div class="layui-input-block seloptinstyle">
+                <select name="interest" lay-filter="seloptinsex" class="seloptinsex">
+                    <!-- 空空如也 -->
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
+<script src="../../Theme/Pageset/CookieSet.js"></script>
+<script src="../../Theme/Pageset/alluseraddedit.js"></script>

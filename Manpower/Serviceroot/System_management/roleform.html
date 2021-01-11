@@ -1,0 +1,63 @@
+﻿<html>
+<head>
+    <link href="../../Theme/Layui/css/layui.css" rel="stylesheet" />
+    <script src="../../Theme/Layui/layui.js"></script>
+    <script src="../../Theme/Scripts/jquery-3.5.1.js"></script>
+    <link href="../../Theme/Images/user_icon.png" rel="icon" />
+
+</head>
+<body>
+    <form action="" class="layui-form" lay-filter="layuiadmin-form-role" style="padding: 20px 30px 0 0;">
+        <input type="hidden" name="id" value="" />
+        <div class="layui-form-item">
+            <label class="layui-form-label">角色</label>
+            <div class="layui-input-inline">
+                <input type="text" name="name" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">权限范围</label>
+            <!--<div class="layui-input-block" name="ddddddddd">
+        <table>
+            <tr>
+                <td><input type="checkbox" value="0" name="limits_nrxst" lay-skin="primary" title="内容系统" ></td>
+                <td><input type="checkbox" value="1" name="limits_sqxt" lay-skin="primary" title="社区系统"></td>
+                <td><input type="checkbox" value="2" name="limits_yh" lay-skin="primary" title="用户"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" value="3" name="limits_js" lay-skin="primary" title="角色"></td>
+                <td><input type="checkbox" value="4" name="limits_plsh" lay-skin="primary" title="评论审核"></td>
+                <td><input type="checkbox" value="5" name="limits_fh" lay-skin="primary" title="发货"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" value="6" name="limits_cg" lay-skin="primary" title="采购"></td>
+                <td><input type="checkbox" value="7" name="limits_xtsz" lay-skin="primary" title="系统设置"></td>
+                <td><input type="checkbox" value="8" name="limits_fyj" lay-skin="primary" title="发邮件"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" value= "9" name="limits_fdx" lay-skin="primary" title="发短信"></td>
+                <td><input type="checkbox" value="10" name="limits_sh" lay-skin="primary" title="审核"></td>
+                <td><input type="checkbox" value="11" name="limits_skpl" lay-skin="primary" title="删库跑路"></td>
+            </tr>
+        </table>
+    </div>-->
+            <div id="test1" style="margin-left:110px"></div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">具体描述</label>
+            <div class="layui-input-block">
+                <textarea type="text" name="content" lay-verify="required" autocomplete="off" class="layui-textarea" style="margin-top: 0px; margin-bottom: 0px; height: 100px;"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-inline">
+                <input type="button" lay-submit="" lay-filter="LAY-user-role-submit" value="确认" class="layui-btn">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+<script src="../../Theme/Pageset/roleform.js"></script>
+<script src="../../Theme/Pageset/CookieSet.js"></script>
+<script src="../../Theme/Pageset/RoleSel.js"></script>

@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../Theme/Layui/css/layui.css" rel="stylesheet" />
+    <script src="../../Theme/Layui/layui.js"></script>
+    <script src="../../Theme/Pageset/employee_about.js"></script>
+    <link href="../../Theme/Images/user_icon.png" rel="icon" />
+    <title>Document</title>    
+</head>
+<body>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+        <legend>员工信息</legend>
+    </fieldset>
+    <form class="layui-form" action="" lay-filter="example" id="Exampletxt">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">姓名</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="Name" lay-verify="required" autocomplete="off" class="layui-input" readonly style="border:none">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">部门</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="Department" lay-verify="required" autocomplete="off" class="layui-input" readonly style="border:none">                    
+                </div>
+            </div>
+        </div>
+        <div class="layui-form">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">性别</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="Sex" lay-verify="required" autocomplete="off" class="layui-input" readonly style="border:none">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">生日</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input" id="Birthday" readonly placeholder="yyyy-MM-dd" name="Birthday" lay-verify="required" style="border:none">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">身份证 </label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="IdCard" lay-verify="identity" autocomplete="off" class="layui-input" readonly style="border:none">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">职位</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="Position" lay-verify="required" autocomplete="off" class="layui-input" readonly style="border:none">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">验证手机</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="Phone" lay-verify="required|phone" autocomplete="off" class="layui-input" readonly style="border:none">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">验证邮箱</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="Email" lay-verify="email" autocomplete="off" class="layui-input" readonly style="border:none">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">民族</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="Nation" lay-verify="required" autocomplete="off" class="layui-input" readonly style="border:none">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">政治面貌</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="Polity" lay-verify="required" autocomplete="off" class="layui-input" readonly style="border:none">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">月薪</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="Salary" lay-verify="number" autocomplete="off" class="layui-input" readonly style="border:none">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">学历</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="Degree" lay-verify="required" autocomplete="off" class="layui-input" readonly style="border:none">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">状态</label>
+            <div class="layui-input-inline">
+                <input type="text" name="Status" lay-verify="required" autocomplete="off" class="layui-input" readonly style="border:none">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">个人履历</label>
+            <div class="layui-input-block">
+                <textarea name="Resume" required lay-verify="required" placeholder="" class="layui-textarea" style="width:40%" readonly></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="button" class="layui-btn" lay-filter="emadd">返回</button>                
+            </div>
+        </div>
+    </form>
+</body>
+</html>

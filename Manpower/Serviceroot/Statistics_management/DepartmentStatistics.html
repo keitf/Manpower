@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="../../Theme/Scripts/jquery-3.5.1.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0-rc.1/echarts.common.js"></script>
+    <title></title>
+</head>
+<body>
+    <div id="main" style="width: 600px;height:400px;margin: auto;margin-top:140px"></div>
+</body>
+</html>
+<script>
+    var emplist = echarts.init(document.getElementById('main'));
+    $.ajax({
+        type: 'post',
+        dataType: 'json',
+        url: '../../Handlers/Statistics.ashx',
+        data: { ac: 'SelDepartment' },
+        cache: false,
+        async: false,
+        success: function (data) {
+            var departmentname = [];
+            for (var i = 0; i < data.length; i++) {
+                departmentname.push(data[i].name);
+            }
+
+            option = {
+                title: {
+                    text: '员工-部门统计',
+                    subtext: ''
+                },
+                color: ['#3398DB'],
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                        type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis: [
+                    {
+                        type: 'category',
+                        data: departmentname,
+                        axisTick: {
+                            alignWithLabel: true
+                        }
+                    }
+                ],
+                yAxis: [
+                    {
+                        type: 'value'
+                    }
+                ],
+                series: [
+                    {
+                        name: '部门',
+                        type: 'bar',
+                        barWidth: '60%',
+                        data: data,
+                        itemStyle: {
+                            normal: {
+                                // 随机显示
+                                color: function (d) { return "#" + Math.floor(Math.random() * (256 * 256 * 256 - 1)).toString(16); }
+
+                                // 定制显示（按顺序）
+                                //color: function (params) {
+                                //    var colorList = ['#C33531', '#EFE42A', '#64BD3D', '#EE9201', '#29AAE3', '#B74AE5', '#0AAF9F', '#E89589', '#16A085', '#4A235A', '#C39BD3 ', '#F9E79F', '#BA4A00', '#ECF0F1', '#616A6B', '#EAF2F8', '#4A235A', '#3498DB'];
+                                //    return colorList[params.dataIndex]
+                                //}
+                            },
+                        }
+                    }
+                ]
+            };
+
+            emplist.setOption(option);
+        }
+    });
+</script>

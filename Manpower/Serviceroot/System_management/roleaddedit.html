@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../Theme/Scripts/jquery-3.5.1.js"></script>
+    <link href="../../Theme/Layui/css/layui.css" rel="stylesheet" />
+    <script src="../../Theme/Layui/layui.js"></script>
+    <link href="../../Theme/Images/user_icon.png" rel="icon" />
+
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="layui-form">
+        <div class="layui-form layui-card-header" lay-filter="">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    角色筛选
+                </div>
+                <div class="layui-inline">
+                    <select name="sex" class="optionSex" id="down_link_name">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <table id="sadata" lay-filter="test1"></table>
+        <script type="text/html" id="toolbarDemo">
+            <div class="layui-btn-container">
+                <button class="layui-btn layui-btn-sm" lay-event="add">添加</button>
+                <button class="layui-btn layui-btn-sm" lay-event="delete">删除</button>
+            </div>
+        </script>
+        <script type="text/html" id="barDemo">
+            <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+        </script>
+    </div>
+</body>
+</html>
+<script src="../../Theme/Pageset/roleaddedit.js"></script>
+<script src="../../Theme/Pageset/CookieSet.js"></script>
+<script src="../../Theme/Pageset/RoleSel.js"></script>

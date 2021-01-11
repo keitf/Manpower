@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../Theme/Layui/css/layui.css" rel="stylesheet" />
+    <script src="../../Theme/Layui/layui.js"></script>
+    <script src="../../Theme/Pageset/employee_list.js"></script>
+    <link href="../../Theme/Images/user_icon.png" rel="icon"/>
+    <title>员工列表</title>
+</head>
+<body>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+        <legend>员工管理</legend>
+    </fieldset>
+    <div class="layui-form">
+        <div class="layui-row">
+            <div class="layui-col-xs2">
+                <div class="grid-demo grid-demo-bg1">
+                    <div class="" id="departTree"></div>
+                </div>
+            </div>
+            <div class="layui-col-xs10">
+                <div class="grid-demo">
+                    <div class="layui-tab layui-tab-card" lay-filter="test">
+                        <ul class="layui-tab-title">
+                            <li class="layui-this">全部员工</li>
+                            <li>在职员工</li>
+                            <li>离职员工</li>
+                        </ul>
+                        <div class="layui-tab-content">                           
+                            <!-- 所有选项卡用相同的一个table 监听选项卡切换后完成其重载即可 -->
+                            <!-- 员工表格 -->
+                            <div class="layui-tab-item layui-show">
+                                <table class="layui-hide" id="employeeList" lay-filter="test"></table>
+                                <!-- 头工具栏 -->
+                                <script type="text/html" id="toolbarDemo">
+                                    <div class="layui-btn-container">
+                                        <button class="layui-btn layui-btn-sm" lay-event="getCheckData">获取选中行数据</button>
+                                        <button class="layui-btn layui-btn-sm" lay-event="getCheckLength">获取选中数目</button>
+                                        <button class="layui-btn layui-btn-sm" lay-event="isAll">验证是否全选</button>
+                                    </div>
+                                </script>
+                                <!-- 行工具栏 -->
+                                <script type="text/html" id="barDemo">
+                                    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+                                    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">离职</a>
+                                </script>
+                                <!-- 详情 -->
+                                <script type="text/html" id="usernameTpl">
+                                    <a href="employee_about.html?id={{ d.ID }}" class="layui-table-link" target="">{{ d.Name }}</a>
+                                </script>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

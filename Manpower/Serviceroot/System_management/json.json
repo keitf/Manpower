@@ -1,0 +1,406 @@
+﻿{
+  "code": 0,
+  "msg": "",
+  "count": 57,
+  "data": [
+    {
+      "id": 7,
+      "title": "C++程序设计教程（第二版）",
+      "author": "钱能  著",
+      "publisher": "２１世纪出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 8,
+      "title": "深度探索 C++ 对象模型",
+      "author": "（美）Stanley B. Lippman  著，侯捷  译",
+      "publisher": "兵器工业出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 9,
+      "title": "Expert C# 2005 Business Objects中文版（第二版）",
+      "author": "（美）霍特卡  著，王鑫  译",
+      "publisher": "北京航空航天大学出版社",
+      "category": " C#"
+    },
+    {
+      "id": 13,
+      "title": "数据结构题集(C语言版)",
+      "author": "严蔚敏 吴伟民 编著",
+      "publisher": "２１世纪出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 14,
+      "title": "C#设计模式——开发大师系列",
+      "author": "（美）麦斯科 著，颜炯 译",
+      "publisher": "北京师范大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 15,
+      "title": "超越C++标准库Boost库导论",
+      "author": "（美）卡尔森（Kalsson，B.）　著，张杰良　译",
+      "publisher": "２１世纪出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 16,
+      "title": "数据结构与算法分析C++描述（第三版）",
+      "author": "（美）维斯  著，张怀勇  等译",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 17,
+      "title": "C++编程思想（第2版）第1卷：标准C++导引（附光盘）",
+      "author": "（美）埃克尔 著，刘宗田等 译",
+      "publisher": "北方交通大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 18,
+      "title": "Visual C++数字图像处理典型算法及实现（附光盘）",
+      "author": "求是科技  编著",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 19,
+      "title": "C程序设计语言（第2版·新版）习题解答",
+      "author": "[美]汤朵，[美]吉米拜尔 著，杨涛等 译",
+      "publisher": "北方交通大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 20,
+      "title": "C++Primer（英文版·第4版）/图灵原版计算机科学系列",
+      "author": "（美）李普曼，（美）拉菇瓦，（美）穆  著",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 21,
+      "title": "C++编程思想（第2卷）实用编程技术——计算机科学丛书",
+      "author": "（美）埃克尔  等著，刁成嘉  等译",
+      "publisher": "北方交通大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 22,
+      "title": "C++编程规范:101条规则、准则与最佳实践（图灵程序设计丛书）",
+      "author": "萨特，亚历山德雷斯库  著，刘基诚  译",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 23,
+      "title": "C++设计新思维(泛型编程与设计模式之应用)",
+      "author": "美.Andrei Alexandrescu 著；候捷，於春景 译",
+      "publisher": "机械工业出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 24,
+      "title": "Visual C#2005程序开发与界面设计秘诀(附盘)",
+      "author": "章立民研究室  著",
+      "publisher": "北方交通大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 25,
+      "title": "单元测试之道C#版：使用NUnit——程序员修炼三部曲第二部",
+      "author": "（美）托马斯  等著，陈伟桩，陶文  译",
+      "publisher": "北京航空航天大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 26,
+      "title": "C++ Primer中文版（第三版）",
+      "author": "美.利普曼 加.劳乔 著 潘爱民 张丽 译",
+      "publisher": "北京师范大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 27,
+      "title": "Essential C++ 中文版",
+      "author": "[美]Stanley B. Lippman著侯捷译",
+      "publisher": "北京航空航天大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 28,
+      "title": "C++程序设计/中国高等院校计算机基础教育课程体系规划教材",
+      "author": "谭浩强  编著",
+      "publisher": "２１世纪出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 29,
+      "title": "Visual C++6.0 程序设计从入门到精通（附CD-ROM光盘一张）",
+      "author": "求是科技  编著",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 31,
+      "title": "C程序设计（第二版）",
+      "author": "谭浩强",
+      "publisher": "２１世纪出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 32,
+      "title": "Visual C++网络通信编程实用案例精选：第二版（附光盘）",
+      "author": "曹衍龙，刘海英  编著",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 33,
+      "title": "C++网络编程，卷1——运用ACE和模式消除复杂性",
+      "author": "（美）施密特，（美）霍斯顿  著，於春景  译",
+      "publisher": "北京航空航天大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 34,
+      "title": "C++标准程序库自修教程与参考手册",
+      "author": "德.Nicolai M.Josuttis 著，侯捷，孟岩 译",
+      "publisher": "机械工业出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 35,
+      "title": "Visual C#2005编程技巧大全",
+      "author": "罗斌 等编",
+      "publisher": "北京科海出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 36,
+      "title": "Visual C#2005技术内幕",
+      "author": "（美）马歇尔  著，许华杰，刘光惠  译",
+      "publisher": "２１世纪出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 37,
+      "title": "C语言解惑",
+      "author": "（美）福伊尔  著，杨涛  等译",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 38,
+      "title": "Visual C#2005入门经典",
+      "author": "（美）福克塞尔　著，陈秋萍　译",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 39,
+      "title": "图像模式识别：VC++技术实现（附光盘一张）——高等学校计算机科学与技术教材",
+      "author": "杨淑莹  编著",
+      "publisher": "大连理工大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 40,
+      "title": "C#网络应用高级编程",
+      "author": "马骏，郑逢斌，沈夏炯　编著",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 42,
+      "title": "Visual C#2005文件IO与数据存取秘诀（附赠DVD）",
+      "author": "章立民研究室  著",
+      "publisher": "北方交通大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 43,
+      "title": "C#2005数据库编程经典教程",
+      "author": "（美）沃顿（Karli watton）  著，陈秋萍  译",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 44,
+      "title": "C#数据库系统开发案例精选(附光盘)",
+      "author": "明日科技　编著",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 45,
+      "title": "C++程序设计题解与上机指导（附CD-ROM光盘一张）——中国高等院校计算机基础教育课程体系规划教材",
+      "author": "谭浩强  编著",
+      "publisher": "中央广播电视大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 46,
+      "title": "C语言编程：一本全面的C语言入门教程（第三版）",
+      "author": "（美）科汉　著，张小潘　译",
+      "publisher": "北京航空航天大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 47,
+      "title": "精通MFC程序设计（附光盘）",
+      "author": "姚领田  编著",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 48,
+      "title": "Visual C++开发基于SNMP网络管理软件(含盘)",
+      "author": "武孟军，徐�煟�任相臣　编著",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 49,
+      "title": "数据结构、算法与应用：C++语言描术——计算机科学丛书",
+      "author": "（美）萨尼（Sahni,S.）  著，汪诗林  等译",
+      "publisher": "北方交通大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 50,
+      "title": "C++入门经典（第3版）",
+      "author": "（美）霍顿 著，李予敏 译",
+      "publisher": "２１世纪出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 51,
+      "title": "Symbian OS C++高效编程",
+      "author": "（美）斯蒂克伯里  著，谢轩  译",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 52,
+      "title": "Visual C++音视频编解码技术及实践（附光盘）",
+      "author": "求是科技  编著",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 53,
+      "title": "C++大学教程（第五版）（附光盘）",
+      "author": "（美）戴特尔（Deitel,H.M.）  等著，张引  等译",
+      "publisher": "北京航空航天大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 54,
+      "title": "C++必知必会——图灵程序设计丛书",
+      "author": "（美）杜赫斯特  著，荣耀  译",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 55,
+      "title": "Visual C++网络程序设计实例详解（附光盘）",
+      "author": "张越  等编著",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 56,
+      "title": "C#数据库系统开发完全手册（附光盘一张）",
+      "author": "明日科技  编著",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 57,
+      "title": "C# 经典实例（第2版）",
+      "author": "（美）希亚德，（美）泰勒特  著，苏金国，王宇飞  译",
+      "publisher": "北京师范大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 58,
+      "title": "C语言实例解析精粹（附源代码光盘一张）",
+      "author": "曹衍龙，林瑞仲，徐慧  编著",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 59,
+      "title": "C++应用程序性能优化",
+      "author": "冯宏华  等编著",
+      "publisher": "北京航空航天大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 60,
+      "title": "C++数值算法（第二版）——国外计算机科学教材系列",
+      "author": "（美）普雷斯 等著，胡健伟 等译",
+      "publisher": "北京航空航天大学出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 61,
+      "title": "Visual C++开发技术大全——软件工程师典藏（附光盘）",
+      "author": "明日科技  编著",
+      "publisher": "安徽文艺出版社",
+      "category": "JSP"
+    },
+    {
+      "id": 99,
+      "title": "222",
+      "author": "222",
+      "publisher": "北京师范大学出版社",
+      "category": "J2EE"
+    },
+    {
+      "id": 100,
+      "title": "222",
+      "author": "222",
+      "publisher": "北京师范大学出版社",
+      "category": "J2EE"
+    },
+    {
+      "id": 101,
+      "title": "222",
+      "author": "222",
+      "publisher": "北京师范大学出版社",
+      "category": "J2EE"
+    },
+    {
+      "id": 102,
+      "title": "222",
+      "author": "222",
+      "publisher": "北京师范大学出版社",
+      "category": "J2EE"
+    },
+    {
+      "id": 103,
+      "title": "222",
+      "author": "222",
+      "publisher": "北京师范大学出版社",
+      "category": "J2EE"
+    },
+    {
+      "id": 104,
+      "title": "1111111111",
+      "author": "0000",
+      "publisher": "２１世纪出版社",
+      "category": " C#"
+    },
+    {
+      "id": 105,
+      "title": "1111111111",
+      "author": "0000",
+      "publisher": "２１世纪出版社",
+      "category": " C#"
+    }
+  ]
+}

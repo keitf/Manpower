@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0-rc.1/echarts.common.js"></script>
+    <script src="../../Theme/Scripts/jquery-3.5.1.js"></script>
+    <title>Echar</title>
+</head>
+<body>
+    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    <div id="main" style="width: 600px;height:400px;margin: auto;margin-top:140px"></div>
+</body>
+</html>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var emplist = echarts.init(document.getElementById('main'));
+
+    $.ajax({
+        type: 'post',
+        dataType: 'json',
+        url: '../../Handlers/Statistics.ashx',
+        data: { ac: 'SelSalary' },
+        cache: false,
+        async: false,
+        success: function (data) {
+            var salaryname = [];
+            for (var i = 0; i < data.length; i++) {
+                salaryname.push(data[i].name);
+            }
+            // 指定图表的配置项和数据
+            option = {
+                title: {
+                    text: '员工-工资统计'
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                legend: {
+                    data: ['工资']
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                toolbox: {
+                    feature: {
+                        saveAsImage: {}
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: salaryname
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: [
+                    {
+                        name: '工资',
+                        type: 'line',
+                        stack: '总量',
+                        data: data
+                    }
+                ]
+            };
+
+            // 使用刚指定的配置项和数据显示图表。
+            emplist.setOption(option);
+        },
+    });
+
+
+</script>

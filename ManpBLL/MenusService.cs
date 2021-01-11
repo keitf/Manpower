@@ -1,0 +1,7 @@
+﻿namespace ManpBLL
+{
+    class MenusService
+    {
+
+    }
+}

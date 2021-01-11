@@ -1,0 +1,373 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C11BCE38-01E2-4F3F-8D36-C873B29A6846}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Manpower</RootNamespace>
+    <AssemblyName>Manpower</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44354</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Providers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AllTest.aspx" />
+    <Content Include="Handlers\Login_hd.ashx" />
+    <Content Include="index.aspx" />
+    <Content Include="Serviceroot\Statistics_management\DegreeStatistics.html" />
+    <Content Include="Serviceroot\Statistics_management\DepartmentStatistics.html" />
+    <Content Include="Serviceroot\Statistics_management\SalaryStatistics.html" />
+    <Content Include="Serviceroot\Statistics_management\SexStatistics.html" />
+    <Content Include="Serviceroot\System_management\alluseredit.html" />
+    <Content Include="Handlers\UserEdit.ashx" />
+    <Content Include="Serviceroot\System_management\json.json" />
+    <Content Include="Handlers\RoleEdit.ashx" />
+    <Content Include="Serviceroot\System_management\resetpwd.html" />
+    <Content Include="Serviceroot\User_management\employee_about.html" />
+    <Content Include="Serviceroot\User_management\employee_add.html" />
+    <Content Include="Serviceroot\User_management\employee_list.html" />
+    <Content Include="Theme\Error\400.html" />
+    <Content Include="Theme\Error\403.html" />
+    <Content Include="Theme\Error\404.html" />
+    <Content Include="Theme\Error\500.html" />
+    <Content Include="Theme\Error\501.html" />
+    <Content Include="Theme\Error\502.html" />
+    <Content Include="Theme\Error\503.html" />
+    <Content Include="Theme\Error\504.html" />
+    <Content Include="Theme\Error\505.html" />
+    <Content Include="Theme\Error\506.html" />
+    <Content Include="Theme\Error\507.html" />
+    <Content Include="Theme\Error\509.html" />
+    <Content Include="Theme\Error\510.html" />
+    <Content Include="Theme\Pageset\employee_about.js" />
+    <Content Include="Theme\Pageset\employee_add.js" />
+    <Content Include="Theme\Pageset\employee_list.js" />
+    <Content Include="Theme\Pageset\resetpwd.js" />
+    <Content Include="Theme\Pageset\roleform.js" />
+    <Content Include="Handlers\Department.ashx" />
+    <Content Include="Handlers\Employee_DIC.ashx" />
+    <Content Include="Handlers\Employee.ashx" />
+    <Content Include="Handlers\Statistics.ashx" />
+    <None Include="Theme\Scripts\jquery-3.5.1.intellisense.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="aaandex.aspx" />
+    <Content Include="Serviceroot\System_management\roleaddedit.html" />
+    <Content Include="Serviceroot\System_management\roleform.html" />
+    <Content Include="Serviceroot\System_management\user.html" />
+    <Content Include="Theme\Images\06.png" />
+    <Content Include="Theme\Images\3-background2.jpg" />
+    <Content Include="Theme\Images\headerimg.jpeg" />
+    <Content Include="Theme\Images\user_icon.png" />
+    <Content Include="Theme\Pageset\alluseraddedit.js" />
+    <Content Include="Theme\Pageset\CookieSet.js" />
+    <Content Include="Theme\Pageset\login.css" />
+    <Content Include="Theme\Pageset\login.js" />
+    <Content Include="Theme\Pageset\roleaddedit.js" />
+    <Content Include="Theme\Pageset\RoleSel.js" />
+    <Content Include="Theme\Pageset\useredit.css" />
+    <Content Include="Theme\Pageset\useredit.js" />
+    <Content Include="Theme\Pageset\vue.js" />
+    <Content Include="Theme\Scripts\jquery-3.5.1.js" />
+    <Content Include="Theme\Scripts\jquery-3.5.1.min.js" />
+    <Content Include="Theme\Scripts\jquery-3.5.1.slim.js" />
+    <Content Include="Theme\Scripts\jquery-3.5.1.slim.min.js" />
+    <Content Include="Theme\Layui\css\layui.css" />
+    <Content Include="Theme\Layui\css\layui.mobile.css" />
+    <Content Include="Theme\Layui\css\modules\code.css" />
+    <Content Include="Theme\Layui\css\modules\laydate\default\laydate.css" />
+    <Content Include="Theme\Layui\css\modules\layer\default\icon-ext.png" />
+    <Content Include="Theme\Layui\css\modules\layer\default\icon.png" />
+    <Content Include="Theme\Layui\css\modules\layer\default\layer.css" />
+    <Content Include="Theme\Layui\css\modules\layer\default\loading-0.gif" />
+    <Content Include="Theme\Layui\css\modules\layer\default\loading-1.gif" />
+    <Content Include="Theme\Layui\css\modules\layer\default\loading-2.gif" />
+    <Content Include="Theme\Layui\font\iconfont.svg" />
+    <Content Include="Theme\Layui\images\face\0.gif" />
+    <Content Include="Theme\Layui\images\face\1.gif" />
+    <Content Include="Theme\Layui\images\face\10.gif" />
+    <Content Include="Theme\Layui\images\face\11.gif" />
+    <Content Include="Theme\Layui\images\face\12.gif" />
+    <Content Include="Theme\Layui\images\face\13.gif" />
+    <Content Include="Theme\Layui\images\face\14.gif" />
+    <Content Include="Theme\Layui\images\face\15.gif" />
+    <Content Include="Theme\Layui\images\face\16.gif" />
+    <Content Include="Theme\Layui\images\face\17.gif" />
+    <Content Include="Theme\Layui\images\face\18.gif" />
+    <Content Include="Theme\Layui\images\face\19.gif" />
+    <Content Include="Theme\Layui\images\face\2.gif" />
+    <Content Include="Theme\Layui\images\face\20.gif" />
+    <Content Include="Theme\Layui\images\face\21.gif" />
+    <Content Include="Theme\Layui\images\face\22.gif" />
+    <Content Include="Theme\Layui\images\face\23.gif" />
+    <Content Include="Theme\Layui\images\face\24.gif" />
+    <Content Include="Theme\Layui\images\face\25.gif" />
+    <Content Include="Theme\Layui\images\face\26.gif" />
+    <Content Include="Theme\Layui\images\face\27.gif" />
+    <Content Include="Theme\Layui\images\face\28.gif" />
+    <Content Include="Theme\Layui\images\face\29.gif" />
+    <Content Include="Theme\Layui\images\face\3.gif" />
+    <Content Include="Theme\Layui\images\face\30.gif" />
+    <Content Include="Theme\Layui\images\face\31.gif" />
+    <Content Include="Theme\Layui\images\face\32.gif" />
+    <Content Include="Theme\Layui\images\face\33.gif" />
+    <Content Include="Theme\Layui\images\face\34.gif" />
+    <Content Include="Theme\Layui\images\face\35.gif" />
+    <Content Include="Theme\Layui\images\face\36.gif" />
+    <Content Include="Theme\Layui\images\face\37.gif" />
+    <Content Include="Theme\Layui\images\face\38.gif" />
+    <Content Include="Theme\Layui\images\face\39.gif" />
+    <Content Include="Theme\Layui\images\face\4.gif" />
+    <Content Include="Theme\Layui\images\face\40.gif" />
+    <Content Include="Theme\Layui\images\face\41.gif" />
+    <Content Include="Theme\Layui\images\face\42.gif" />
+    <Content Include="Theme\Layui\images\face\43.gif" />
+    <Content Include="Theme\Layui\images\face\44.gif" />
+    <Content Include="Theme\Layui\images\face\45.gif" />
+    <Content Include="Theme\Layui\images\face\46.gif" />
+    <Content Include="Theme\Layui\images\face\47.gif" />
+    <Content Include="Theme\Layui\images\face\48.gif" />
+    <Content Include="Theme\Layui\images\face\49.gif" />
+    <Content Include="Theme\Layui\images\face\5.gif" />
+    <Content Include="Theme\Layui\images\face\50.gif" />
+    <Content Include="Theme\Layui\images\face\51.gif" />
+    <Content Include="Theme\Layui\images\face\52.gif" />
+    <Content Include="Theme\Layui\images\face\53.gif" />
+    <Content Include="Theme\Layui\images\face\54.gif" />
+    <Content Include="Theme\Layui\images\face\55.gif" />
+    <Content Include="Theme\Layui\images\face\56.gif" />
+    <Content Include="Theme\Layui\images\face\57.gif" />
+    <Content Include="Theme\Layui\images\face\58.gif" />
+    <Content Include="Theme\Layui\images\face\59.gif" />
+    <Content Include="Theme\Layui\images\face\6.gif" />
+    <Content Include="Theme\Layui\images\face\60.gif" />
+    <Content Include="Theme\Layui\images\face\61.gif" />
+    <Content Include="Theme\Layui\images\face\62.gif" />
+    <Content Include="Theme\Layui\images\face\63.gif" />
+    <Content Include="Theme\Layui\images\face\64.gif" />
+    <Content Include="Theme\Layui\images\face\65.gif" />
+    <Content Include="Theme\Layui\images\face\66.gif" />
+    <Content Include="Theme\Layui\images\face\67.gif" />
+    <Content Include="Theme\Layui\images\face\68.gif" />
+    <Content Include="Theme\Layui\images\face\69.gif" />
+    <Content Include="Theme\Layui\images\face\7.gif" />
+    <Content Include="Theme\Layui\images\face\70.gif" />
+    <Content Include="Theme\Layui\images\face\71.gif" />
+    <Content Include="Theme\Layui\images\face\8.gif" />
+    <Content Include="Theme\Layui\images\face\9.gif" />
+    <Content Include="Theme\Layui\layui.all.js" />
+    <Content Include="Theme\Layui\layui.js" />
+    <Content Include="Theme\Layui\lay\modules\carousel.js" />
+    <Content Include="Theme\Layui\lay\modules\code.js" />
+    <Content Include="Theme\Layui\lay\modules\colorpicker.js" />
+    <Content Include="Theme\Layui\lay\modules\element.js" />
+    <Content Include="Theme\Layui\lay\modules\flow.js" />
+    <Content Include="Theme\Layui\lay\modules\form.js" />
+    <Content Include="Theme\Layui\lay\modules\jquery.js" />
+    <Content Include="Theme\Layui\lay\modules\laydate.js" />
+    <Content Include="Theme\Layui\lay\modules\layedit.js" />
+    <Content Include="Theme\Layui\lay\modules\layer.js" />
+    <Content Include="Theme\Layui\lay\modules\laypage.js" />
+    <Content Include="Theme\Layui\lay\modules\laytpl.js" />
+    <Content Include="Theme\Layui\lay\modules\mobile.js" />
+    <Content Include="Theme\Layui\lay\modules\rate.js" />
+    <Content Include="Theme\Layui\lay\modules\slider.js" />
+    <Content Include="Theme\Layui\lay\modules\table.js" />
+    <Content Include="Theme\Layui\lay\modules\transfer.js" />
+    <Content Include="Theme\Layui\lay\modules\tree.js" />
+    <Content Include="Theme\Layui\lay\modules\upload.js" />
+    <Content Include="Theme\Layui\lay\modules\util.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllTest.aspx.cs">
+      <DependentUpon>AllTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllTest.aspx.designer.cs">
+      <DependentUpon>AllTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\Department.ashx.cs">
+      <DependentUpon>Department.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\Employee.ashx.cs">
+      <DependentUpon>Employee.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\Employee_DIC.ashx.cs">
+      <DependentUpon>Employee_DIC.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\Login_hd.ashx.cs">
+      <DependentUpon>Login_hd.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\RoleEdit.ashx.cs">
+      <DependentUpon>RoleEdit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\Statistics.ashx.cs">
+      <DependentUpon>Statistics.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\UserEdit.ashx.cs">
+      <DependentUpon>UserEdit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aaandex.aspx.cs">
+      <DependentUpon>aaandex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aaandex.aspx.designer.cs">
+      <DependentUpon>aaandex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SQLHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Theme\Layui\font\iconfont.eot" />
+    <Content Include="Theme\Layui\font\iconfont.ttf" />
+    <Content Include="Theme\Layui\font\iconfont.woff" />
+    <Content Include="Theme\Layui\font\iconfont.woff2" />
+    <Content Include="Theme\Scripts\jquery-3.5.1.slim.min.map" />
+    <Content Include="Theme\Scripts\jquery-3.5.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ManpBLL\ManpBLL.csproj">
+      <Project>{54d1c826-37cf-44ac-ad3b-25631be5633a}</Project>
+      <Name>ManpBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManpowerMODEL\ManpowerMODEL.csproj">
+      <Project>{b2df9593-8068-4c60-8dc5-e2745290b30c}</Project>
+      <Name>ManpowerMODEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59193</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44354/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
