@@ -59,7 +59,7 @@
                 </div>
             </div>
 
-            <div class="layui-body">
+            <div class="layui-body" runat="server" id="mainbody">
                 <!-- 内容主体区域 -->
                 <div style="width: 100%; height: 100%; border: 0px solid red">
                     <%-- 测试用已隐藏 --%>
