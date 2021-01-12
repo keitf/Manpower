@@ -18,7 +18,7 @@ namespace Manpower
             {
                 Response.Write("<script>alert('未登陆！无法操作系统！');</script>");
                 leftnav.Visible = false;
-                mainbody.Visible = false;                               
+                mainbody.Visible = false;               
             }
             else
             {

@@ -71,7 +71,7 @@
 
             <div class="layui-footer">
                 <!-- 底部固定区域 -->
-                © layui.com - 底部固定区域
+                © 2020-2021 sokach.xyz
             </div>
         </div>
     </form>
@@ -88,6 +88,9 @@
             delCookie("cname");
             delCookie("cpwd");
             delCookie("sname");
+            layer.msg("3秒后自动前往登录页");
+            setInterval(function () { window.location = "login.aspx"; }, 3000);
+            
         });
 
         $(function () {
@@ -99,14 +102,15 @@
                     delCookie("cname");
                     delCookie("cpwd");
                     delCookie("sname");
-                    location.reload();
+                    layer.msg("3秒后自动前往登录页");
+                    setInterval(function () { window.location = "login.aspx"; }, 3000);
                 }
                 $("#iframeMain").attr("src", $(this).attr("href"));
             });
             $("li>a").click(function (e) {
                 e.preventDefault();
                 $("#iframeMain").attr("src", $(this).attr("href"));
-            });            
+            });                        
         });
     });
 

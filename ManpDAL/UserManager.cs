@@ -179,7 +179,7 @@ namespace ManpDAL
         public int UserReg(string uname,string upwd,int seid,string selsave)
         {
             string strSql1 = string.Format("INSERT INTO [dbo].[Users]([Account], [Password]," +
-                " [RoleID], [IsActive]) VALUES ('{0}', '{1}', '{2}', '{3}');", uname, upwd, 0, 1);
+                " [RoleID], [IsActive]) VALUES ('{0}', '{1}', '{2}', '{3}');", uname, upwd, 1001, 1);
             int i = SqlHelper.ExecuteNonQuery(strConn, CommandType.Text, strSql1);
 
             string strSql2 = string.Format("SELECT * FROM Users WHERE Account = '{0}'", uname);
