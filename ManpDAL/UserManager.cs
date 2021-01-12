@@ -167,6 +167,74 @@ namespace ManpDAL
             return SqlHelper.ExecuteScalar(strConn, CommandType.Text, strSql).ToString();
         }
 
+        public int CheckDuplicate(string uname)
+        {
+            string strSql = string.Format("SELECT * FROM Users WHERE Account = '{0}'", uname);
+
+            DataTable dt = SqlHelper.ExecuteDataset(strConn, CommandType.Text, strSql).Tables[0];
+
+            return dt.Rows.Count;
+        }
+
+        public int UserReg(string uname,string upwd,int seid,string selsave)
+        {
+            string strSql1 = string.Format("INSERT INTO [dbo].[Users]([Account], [Password]," +
+                " [RoleID], [IsActive]) VALUES ('{0}', '{1}', '{2}', '{3}');", uname, upwd, 0, 1);
+            int i = SqlHelper.ExecuteNonQuery(strConn, CommandType.Text, strSql1);
+
+            string strSql2 = string.Format("SELECT * FROM Users WHERE Account = '{0}'", uname);
+            DataTable dt = SqlHelper.ExecuteDataset(strConn, CommandType.Text, strSql2).Tables[0];
+
+            string strSql3 = string.Format("INSERT INTO [dbo].[pwdSafe]([se1], [sesave1], [UID]) VALUES ({0}, '{1}', {2});",seid,selsave,Convert.ToInt32(dt.Rows[0][0]));
+
+            int j = SqlHelper.ExecuteNonQuery(strConn, CommandType.Text, strSql3);
+            return j;
+        }
+
+        public string MibaoList()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            string strsql = "SELECT * FROM Secret_security";
+
+            DataTable dt = SqlHelper.ExecuteDataset(strConn, CommandType.Text, strsql).Tables[0];
+
+            if (dt.Rows.Count>0)
+            {
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    sb.Append("<option value=\""+dt.Rows[i][0].ToString()+"\">"+dt.Rows[i][1].ToString()+"</option>");
+                }               
+            }
+            string s = sb.ToString();
+
+            return s;
+        }
+
+        public int Userrecover(string uname, string upwd, int seid, string selsave)
+        {
+            int i = 0;
+            //查询该用户下的ID 
+            string strSql1 = string.Format("SELECT * FROM Users WHERE Account = '{0}'", uname);
+            string uid = SqlHelper.ExecuteScalar(strConn, CommandType.Text, strSql1).ToString();
+
+            //查询对应的密保
+            string strSql2 = string.Format("SELECT * FROM pwdSafe WHERE UID = {0}", uid);
+            DataTable dt = SqlHelper.ExecuteDataset(strConn, CommandType.Text, strSql2).Tables[0];
+
+            if (dt.Rows[0][1].ToString() == seid.ToString() && dt.Rows[0][2].ToString() == selsave)
+            {
+                string strSql3 = string.Format("UPDATE [dbo].[Users] SET [Password] = '{0}' WHERE [ID] = {1};",upwd,uid);
+                i = SqlHelper.ExecuteNonQuery(strConn, CommandType.Text, strSql3);
+            }
+            else
+            {
+                i = 2;
+            }
+
+            return i;
+        }
+
         ////暂停使用
         ///
         /// 

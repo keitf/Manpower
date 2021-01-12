@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Manpower.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="Manpower.Login" %>
 
 <!DOCTYPE html>
 
@@ -54,7 +54,7 @@
                     <button type="button" class="layui-btn">登录</button>
                 </div>
             </div>
-            <a href="#" class="font-set">忘记密码?</a> <a href="#" class="font-set">立即注册</a>
+            <a href="recover.html" class="font-set">忘记密码?</a> <a href="reg.html" class="font-set">立即注册</a>
         </div>
     </form>
 </body>

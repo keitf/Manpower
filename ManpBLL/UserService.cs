@@ -45,5 +45,26 @@
             ManpDAL.UserManager user1 = new ManpDAL.UserManager();
             return user1.Repwd(npwd, id, lpwd);
         }
+        public int CheckDuplicate(string uname)
+        {
+            ManpDAL.UserManager user1 = new ManpDAL.UserManager();
+            return user1.CheckDuplicate(uname);
+        }
+        public int UserReg(string uname, string upwd, int seid, string selsave)
+        {
+            ManpDAL.UserManager user1 = new ManpDAL.UserManager();
+            return user1.UserReg(uname, upwd, seid, selsave);
+        }
+        public string MibaoList()
+        {
+            ManpDAL.UserManager user1 = new ManpDAL.UserManager();
+            return user1.MibaoList();
+        }
+
+        public int Userrecover(string uname, string upwd, int seid, string selsave)
+        {
+            ManpDAL.UserManager user1 = new ManpDAL.UserManager();
+            return user1.Userrecover(uname, upwd, seid, selsave);
+        }
     }
 }

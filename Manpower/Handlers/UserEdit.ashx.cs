@@ -29,6 +29,18 @@ namespace Manpower.Handlers
                 case "UserRepwd":
                     UserRepwd(context);
                     break;
+                case "CheckDuplicate":
+                    Check_Duplicate(context);
+                    break;
+                case "UserReg":
+                    UserReg(context);
+                    break;
+                case "mibaolist":
+                    mibaolist(context);
+                    break;
+                case "Userrecover":
+                    Userrecover(context);
+                    break;
                 default:
                     break;
             }
@@ -92,6 +104,51 @@ namespace Manpower.Handlers
             string npwd = context.Request["npwd"];
 
             context.Response.Write(user.Repwd(opwd, id, npwd));
+        }
+
+        public void Check_Duplicate(HttpContext context)
+        {
+            string uname = context.Request["user"].ToString();
+
+            ManpBLL.UserService user = new ManpBLL.UserService();
+
+            int i = user.CheckDuplicate(uname);
+            
+            context.Response.Write(i);
+        }
+
+        public void UserReg(HttpContext context)
+        {
+            string user = context.Request["user"];
+            string pwd = context.Request["pwd"];
+            int se1 =Convert.ToInt32( context.Request["se1"]);
+            string sesave = context.Request["selsave"];
+
+            ManpBLL.UserService userService = new ManpBLL.UserService();
+
+            int i = userService.UserReg(user, pwd, se1, sesave);
+
+            context.Response.Write(i);
+        }
+
+        public void Userrecover(HttpContext context)
+        {
+            string user = context.Request["user"];
+            string pwd = context.Request["pwd"];
+            int se1 = Convert.ToInt32(context.Request["se1"]);
+            string sesave = context.Request["selsave"];
+
+            ManpBLL.UserService userService = new ManpBLL.UserService();
+
+            int i= userService.Userrecover(user, pwd, se1, sesave);
+
+            context.Response.Write(i);
+        }
+
+        public void mibaolist(HttpContext context)
+        {
+            ManpBLL.UserService userService = new ManpBLL.UserService();
+            context.Response.Write(userService.MibaoList());
         }
     }
 }

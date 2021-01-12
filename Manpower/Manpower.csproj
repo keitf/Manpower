@@ -96,6 +96,8 @@
     <Content Include="default.html" />
     <Content Include="Handlers\Login_hd.ashx" />
     <Content Include="index.aspx" />
+    <Content Include="recover.html" />
+    <Content Include="reg.html" />
     <Content Include="Serviceroot\Statistics_management\DegreeStatistics.html" />
     <Content Include="Serviceroot\Statistics_management\DepartmentStatistics.html" />
     <Content Include="Serviceroot\Statistics_management\SalaryStatistics.html" />
@@ -133,7 +135,7 @@
     <Content Include="Handlers\Employee.ashx" />
     <Content Include="Handlers\Statistics.ashx" />
     <None Include="Theme\Scripts\jquery-3.5.1.intellisense.js" />
-    <Content Include="Login.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="aaandex.aspx" />
     <Content Include="Serviceroot\System_management\roleaddedit.html" />
     <Content Include="Serviceroot\System_management\roleform.html" />
@@ -148,6 +150,7 @@
     <Content Include="Theme\Pageset\login.js" />
     <Content Include="Theme\Pageset\roleaddedit.js" />
     <Content Include="Theme\Pageset\RoleSel.js" />
+    <Content Include="Theme\Pageset\style.css" />
     <Content Include="Theme\Pageset\useredit.css" />
     <Content Include="Theme\Pageset\useredit.js" />
     <Content Include="Theme\Pageset\vue.js" />
@@ -298,12 +301,12 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="aaandex.aspx.cs">
       <DependentUpon>aaandex.aspx</DependentUpon>
