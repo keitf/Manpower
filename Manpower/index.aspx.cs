@@ -16,7 +16,8 @@ namespace Manpower
             //检查cookie防止 未登陆操作
             if (Request.Cookies["userroleid"] == null)
             {
-                Response.Write("<script>alert('未登陆！无法操作系统！');</script>");                
+                Response.Write("<script>alert('未登陆！无法操作系统！');</script>");
+                leftnav.Visible = false;
             }
             else
             {

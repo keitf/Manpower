@@ -120,7 +120,7 @@ function UserLogin(na, pwd, swch) {
             }
             if (data >0) {
                 document.cookie = 'userroleid=' + data;
-                window.location = 'index.aspx';
+                window.location = 'Index.aspx';
             }
             if (data == -1) {
                 layer.msg('用户名错误!', { icon: 5 });
