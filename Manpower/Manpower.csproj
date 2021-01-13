@@ -123,6 +123,8 @@
     <Content Include="Theme\Error\507.html" />
     <Content Include="Theme\Error\509.html" />
     <Content Include="Theme\Error\510.html" />
+    <Content Include="Theme\fonts\fontawesome-webfont.svg" />
+    <Content Include="Theme\Images\logo.png" />
     <Content Include="Theme\Pageset\employee_about.js" />
     <Content Include="Theme\Pageset\employee_add.js" />
     <Content Include="Theme\Pageset\employee_list.js" />
@@ -134,6 +136,11 @@
     <Content Include="Handlers\Employee_DIC.ashx" />
     <Content Include="Handlers\Employee.ashx" />
     <Content Include="Handlers\Statistics.ashx" />
+    <Content Include="Theme\fonts\fontawesome-webfont.eot" />
+    <Content Include="Theme\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Theme\fonts\fontawesome-webfont.woff" />
+    <Content Include="Theme\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Theme\fonts\FontAwesome.otf" />
     <None Include="Theme\Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="login.aspx" />
     <Content Include="aaandex.aspx" />
